@@ -1,6 +1,6 @@
 # Sort Comparer
 
-Program that compares the performance of various sorting algorithms on the provided input values, read in via standard input.
+Program that compares the performance of various sorting algorithms on input values read in via standard input.
 
 Also provided is a program that prints a specified amount of random numbers to standard output, which can be used as test input for the sort comparer. However, any list of integers within the `long` integer data type range (-2<sup>31</sup> through 2<sup>31</sup> - 1) and separated by spaces will work.
 
@@ -30,7 +30,8 @@ g++ -std=c++17 -Wall -o randomnumbers randomnumbers.o
 g++ -std=c++17 -Wall -c sortcomparer.cpp
 g++ -std=c++17 -Wall -o sortcomparer sortcomparer.o
 maxboyko:~/Documents/github/sortcomparer $ # Almost sorted input
-maxboyko:~/Documents/github/sortcomparer $ seq -s ' ' 1 5100 >> test1.txt; seq -s ' ' 4900 10000 >> test1.txt
+maxboyko:~/Documents/github/sortcomparer $ seq -s ' ' 1 5100 >> test1.txt
+maxboyko:~/Documents/github/sortcomparer $ seq -s ' ' 4900 10000 >> test1.txt
 maxboyko:~/Documents/github/sortcomparer $ ./sortcomparer < test1.txt
 Running Tree Sort... Done.
 Running Strand Sort... Done.
